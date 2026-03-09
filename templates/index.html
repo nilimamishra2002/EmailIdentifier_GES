@@ -35,14 +35,15 @@ background:white;
 border-radius:10px;
 padding:25px;
 box-shadow:0 4px 12px rgba(0,0,0,0.08);
-margin-bottom:30px;
+margin-bottom:20px;
+margin-top:20px;
 }
 
 .upload-row{
 display:flex;
-gap:15px;
-align-items:center;
-margin-top:10px;
+justify-content:center;
+gap:10px;
+margin-top:20px;
 }
 
 input[type="file"]{
@@ -121,16 +122,15 @@ document.getElementById("loader").style.display="block";
 
 <div class="container">
 
-<h1>Email Domain Intelligence & Sector Identification</h1>
+<h1 style="text-align:center;">Domain Insight</h1>
 
-<p class="subtitle">
-Upload a CSV file containing email addresses to automatically identify
-company domains, industry sectors, and confidence scores using web-based
-data enrichment.
+<p style="text-align:center; color:#666;">
+Identify company and sector from email domains
 </p>
 
 
-<div class="upload-section">
+
+<div class="upload-section" style="text-align:center;">
 
 <form method="POST" enctype="multipart/form-data" onsubmit="showLoader()">
 
@@ -184,6 +184,10 @@ Processing dataset and enriching email domains...
 {% endfor %}
 
 </table>
+
+<form action="/download" method="POST" style="margin-top:20px;">
+    <button type="submit">Download Excel</button>
+</form>
 
 </div>
 
