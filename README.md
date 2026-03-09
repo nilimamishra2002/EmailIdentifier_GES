@@ -59,6 +59,7 @@ The results are displayed through a simple **web interface** and can be download
 ---
 
 ## Project Structure
+```
 Email_Enrichment_Tool
 │
 ├── app.py
@@ -80,6 +81,7 @@ Email_Enrichment_Tool
 │ └── input.csv
 │
 └── test_selenium.py
+```
 ---
 
 ## How the System Works
